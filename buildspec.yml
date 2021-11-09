@@ -3,7 +3,7 @@ version: 0.1
 phases:
   install:
     runtime-version:
-      java: openjdk8
+      java: corretto8
     commands:
       - echo: Runtime completed.
   pre_build:
