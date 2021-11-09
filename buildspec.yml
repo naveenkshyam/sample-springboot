@@ -4,8 +4,8 @@ phases:
   install:
     runtime-version:
       java: corretto8
-    commands:
-      - echo: Runtime completed.
+      commands:
+        - echo Finished setting java ...
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
