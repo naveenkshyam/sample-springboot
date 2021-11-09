@@ -12,11 +12,10 @@ phases:
     build:
       commands:
         - echo Build started on `date`
-        - mvn clean prepare-package war:exploded
+        - mvn clean package
   post_build:
     commands:
        - echo Build completed on `date`
-       - mv target/deploy ./
 artifacts:
   files:
-    - deploy/**/*
+    - target/sample-springboot-1.0-SNAPSHOT.jar
